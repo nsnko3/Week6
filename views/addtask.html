@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="a.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <div class="header">
+            <img src="TBJ.png">
+        <div class="header-right">
+         <a class="active"href="/addtask">Add New Task</a>
+            <a href="/deletetask">Delete Task</a>
+            <a href="/listtasks">List All Tasks</a>
+            <a href="/adddeveloper">Add New Developer</a>
+            <a href="/listdevelopers">List Developers</a>
+            <a href="/updatetask">Update Tasks</a>
+            <a href="/">Home</a>
+        
+        </div>
+</head>
+<br>
+<body>
+   <form action="/newtask" method="POST">
+        <label><font size="+2"><b>Task Name: </b></font></label>
+        <input type="text" placeholder="Task Name" name="taskname"> </br>
+        <label><font size="+2"><b>Assign To: </b></font></label>
+        <input type="text" placeholder="Assign To:" name="taskassigned"> </br>
+        <label><font size="+2"><b>Task Due: </b></font></label>
+        <input type="date" placeholder="Day/Month/Year" name="taskdue"></br>
+        <label><font size="+2"><b>Task Description: </b></font></label>
+        <input type="text" placeholder="Task Description" name="taskdescription"> </br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

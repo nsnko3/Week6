@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="a.css">
+    <div class="header">
+            <img src="TBJ.png">
+        <div class="header-right">
+         <a class="active"href="/adddeveloper">Add New Developer</a>
+            <a href="/addtask">Add New Task</a>
+            <a href="/deletetask">Delete Task</a>
+            <a href="/listtasks">List All Tasks</a>
+            <a href="/listdevelopers">List Developers</a>
+            <a href="/updatetask">Update Tasks</a>
+            <a href="/">Home</a>
+        
+        </div>
+</head>
+<body>
+    
+   <form action="/newdeveloper" method="POST">
+        <label><font size="+2"><b>Name: </b></font></label> </br>
+        <input type="text" placeholder="First Name" name="developerfirstname"> </br>
+        <input type="text" placeholder="Last Name" name="developerlastname"> </br>
+        <label><font size="+2"><b>Level: </b></font></label></br>
+        <input type="text" placeholder="Level" name="developerlevel"></br>
+        <label><font size="+2"><b>Address: </b></font></label></br>
+        <input type="text" placeholder="State" name="stateaddress"> </br>
+        <input type="text" placeholder="Suburb" name="suburbaddress"> </br>
+        <input type="text" placeholder="Street" name="streetaddress"> </br>
+        <input type="text" placeholder="Unit" name="unitaddress"> </br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

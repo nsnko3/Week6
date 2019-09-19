@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" href="a.css">
+    <div class="header">
+        <div class="header-right">
+                <img src="TBJ.png">
+         <a class="active"href="/listdevelopers">List Developers</a>
+            <a href="/addtask">Add New Task</a>
+            <a href="/deletetask">Delete Task</a>
+            <a href="/listtasks">List All Tasks</a>
+            <a href="/adddeveloper">Add New Developer</a>
+            <a href="updatetask">Update Tasks</a>
+            <a href="/">Home</a>
+        
+        </div>
+</head>
+<body>
+    <html>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    </br>
+    <h1>
+        <table>
+            <tr>
+                <td>Developer Id</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Level</td>
+                <td>State</td>
+                <td>Suburb</td>
+                <td>Street</td>
+                <td>Unit No.</td>
+            </tr>
+            <% for (let i =0; i< developerdb.length;i++){ %>
+                <tr>
+                    <td><%= developerdb[i]._id %> </td>
+                    <td><%= developerdb[i].developername.firstName %></td>
+                    <td><%= developerdb[i].developername.lastName %></td>    
+                    <td><%= developerdb[i].level %></td>
+                    <td><%= developerdb[i].address.state%></td>
+                    <td><%= developerdb[i].address.suburb%></td>
+                    <td><%= developerdb[i].address.street %></td>
+                    <td><%= developerdb[i].address.unit %></td>
+                </tr>
+         <%}%>
+
+ </table>
+</body>
+</html>
+</body>
+</html>
